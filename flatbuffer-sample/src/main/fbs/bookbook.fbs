@@ -1,0 +1,17 @@
+namespace com.xiaomi.cube.book.Book;
+
+struct IScore {
+  id:long;
+  s:double;
+}
+table SScore {
+  id:string;
+  s:double;
+}
+table Book{
+  id:string; // Struct.
+  similarBook:[IScore];
+  userScore:[SScore];
+}
+
+root_type Book;
